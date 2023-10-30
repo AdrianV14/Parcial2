@@ -1,12 +1,29 @@
-import { shallowMount } from '@vue/test-utils'
-import HelloWorld from '@/components/HelloWorld.vue'
+import { shallowMount,mount  } from '@vue/test-utils'
+import Altas from '@/components/Altas.vue'
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message'
-    const wrapper = shallowMount(HelloWorld, {
-      props: { msg }
-    })
-    expect(wrapper.text()).toMatch(msg)
+describe('Altas.vue components', () => {
+  let wrapper
+
+  beforeEach(() => {
+    wrapper = shallowMount(Altas)
   })
+
+  test('Debe de hacer match con el snapshot', () => {
+    const wrapper = shallowMount(Altas)
+    expect(wrapper.html()).toMatchSnapshot()
+  })
+
+  test('Se enseña la tabla si check:true', () => {
+    const wrapper = shallowMount(Altas, {
+      data(){
+        return{
+          check:true
+        }
+      }
+     })
+     const table = wrapper.find('table')
+
+     expect(table.exists()).toBeTruthy()
+  })
+
 })

@@ -24,7 +24,7 @@
                     </div>
                     <div class="col">
                         <label for="fecha" class="form-label">Fecha</label>
-                        <input type="text" class="form-control" id="telefono" v-model="fecha" disabled >
+                        <input type="text" class="form-control" id="fecha" v-model="fecha" disabled >
                     </div>
                     <div class="col">
                         <label for="correo" class="form-label">Correo</label>
@@ -108,7 +108,7 @@ export default {
     },
     computed: {
         isFormFilled() {
-            return this.name !== '' && this.email !== ''
+            return this.nombre !== '' && this.correo !== '' && this.tel !== "" && this.rfc !== "" && this.edad !== "" && this.cantidad !== "" && this.meses !== "" && this.interes !== ""
         },
     },
     methods:{

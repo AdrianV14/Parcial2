@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Altas.vue components Debe de hacer match con el snapshot 1`] = `
+<div class="container">
+  <form>
+    <div class="row">
+      <div class="col"><label for="nombre" class="form-label">Nombre Completo</label><input type="text" class="form-control" id="nombre" required=""></div>
+      <div class="col"><label for="rfc" class="form-label">RFC</label><input type="text" placeholder="13 o 14 caracteres" class="form-control" id="rfc" max="14" min="13" required=""></div>
+      <div class="col-1"><label for="edad" class="form-label">Edad</label><input type="number" class="form-control" id="edad" required=""></div>
+    </div>
+    <div class="row">
+      <div class="col"><label for="telefono" class="form-label">Telefono</label><input type="text" placeholder="" class="form-control" id="telefono" min="10" required=""></div>
+      <div class="col"><label for="fecha" class="form-label">Fecha</label><input type="text" class="form-control" id="fecha" disabled=""></div>
+      <div class="col"><label for="correo" class="form-label">Correo</label><input type="email" placeholder="ejemplo@ejemplo" class="form-control" id="correo" aria-describedby="emailHelp" required="">
+        <div id="emailHelp" class="form-text">No compartiremos esta informacino con nadie mas.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><label for="cantidad" class="form-label">Cantidad a prestar</label><input type="number" class="form-control" id="cantidad" required=""></div>
+      <div class="col"><label for="meses" class="form-label">Meses</label><input type="number" class="form-control" id="meses" required=""></div>
+      <div class="col-3"><label for="interes" class="form-label">Interes</label><input type="number" placeholder="Numero entero (sin signo de %)" class="form-control" id="interes" required=""></div>
+      <div class="col"><label for="total" class="form-label">Total a pagar</label><input type="text" class="form-control" id="total" disabled=""></div>
+    </div><button type="submit" disabled="" class="btn btn-primary">Calcular</button><button class="btn btn-danger">Borrar</button>
+  </form>
+  <!--v-if-->
+</div>
+`;
